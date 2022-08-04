@@ -31,11 +31,13 @@ export function Home() {
 
     return (
         <ul className="products-container__list">
-            {store.map(product => (
-                <li className="product-item" key={product.id}>
-                    <img src={product.image} />
-                    <h3>{product.title}</h3>
+            {store.map(item => (
+                <a href="#">
+                <li className="product-item" key={item.id}>
+                    <img src={item.image} />
+                    <h3>{item.title}</h3>
                 </li>
+                </a>
             ))}    
         </ul>
     )

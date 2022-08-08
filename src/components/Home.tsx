@@ -1,4 +1,5 @@
 import { useEffect , useState } from "react";
+import { useParams } from "react-router-dom";
 
 // "products": [
 //     {
@@ -32,12 +33,11 @@ export function Home() {
     return (
         <ul className="products-container__list">
             {store.map(item => (
-                <a href="#">
+                
                 <li className="product-item" key={item.id}>
                     <img src={item.image} />
                     <h3>{item.title}</h3>
                 </li>
-                </a>
             ))}    
         </ul>
     )

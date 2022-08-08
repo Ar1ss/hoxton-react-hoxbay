@@ -19,7 +19,7 @@ export function CategoriesItems(){
     return (
         <ul className="products-container__list">
             {product.map(item => (
-                <a href="#">
+                <a href="">
                 <li className="product-item" key={item.id}>
                     <img src={item.image} />
                     <h3>{item.title}</h3>
